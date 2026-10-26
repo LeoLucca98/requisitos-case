@@ -109,11 +109,6 @@ export default function Home() {
           <div className="card step"><span>Fase 2</span><h3>Linha de base</h3><p>Requisitos com critérios de aceite aprovados em ata e matriz de rastreabilidade meta → requisito → entrega.</p></div>
           <div className="card step"><span>Fase 3</span><h3>Gestão de mudanças</h3><p>Toda demanda nova vira solicitação de mudança, com análise de impacto e, quando cabe, termo aditivo.</p></div>
         </div>
-        <div className="cost">
-          <div><b>R$ 78 mil</b><span>custo do PO em 12 meses, já pago pelo orçamento do convênio</span></div>
-          <div className="vs">×</div>
-          <div><b>R$ 180 mil</b><span>captados só neste aditivo, cerca de 2,3 vezes o custo</span></div>
-        </div>
       </section>
     </main>
   )
