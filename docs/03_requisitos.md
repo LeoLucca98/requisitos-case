@@ -1,7 +1,7 @@
 # 03 — Especificação de Requisitos — Linha de Base v1.0 — SENTINELA
 
 > Convênio Fundepes nº 042/2026 · PTA v1.0 (aprovado em 20/02/2026) · Vigência original 01/03/2026 a 28/02/2027 · R$ 600.000,00
-> Elaboração: Leonardo Lucca (PO) · Revisão técnica: Felipe Andrade Rocha, Thiago Melo Cavalcante, Dra. Aline Souza Medeiros · Aprovação: Prof. Dr. Leandro Dias (LASIN) e Eng. Juliana Mendes Prado (MetalPrime).
+> Elaboração: PO · Revisão técnica: Engenharia de software sênior, Engenharia de automação, Ciência de dados · Aprovação: Coordenação do projeto (LASIN) e Gerência de P&D da MetalPrime (MetalPrime).
 > Escopo: **somente META-1 a META-4** (PTA v1.0). Requisitos de rastreabilidade por peça não existem nesta linha de base (ver §6).
 
 ---
@@ -281,8 +281,8 @@ Qualquer pedido que cruze esta fronteira é **alteração de escopo** e segue PT
 
 | Versão | Data | Descrição | Autor | Aprovação |
 |---|---|---|---|---|
-| 0.1 | 27/03/2026 | Rascunho a partir de entrevistas com Ferraz e MetalPrime | Leonardo Lucca (PO) | — |
-| 0.9 | 14/04/2026 | Revisão técnica interna (RNF de borda, regras de OEE) | PO + equipe técnica | Prof. Dr. Leandro Dias |
-| **1.0** | **24/04/2026** | **Linha de base aprovada** (ENT-1.1): RF-001..RF-028, RNF-001..RNF-014, RN-01..RN-10 | Leonardo Lucca (PO) | Eng. Juliana Mendes Prado (MetalPrime), em ata da reunião de 24/04/2026; Prof. Dr. Leandro Dias (LASIN) |
+| 0.1 | 27/03/2026 | Rascunho a partir de entrevistas com Ferraz e MetalPrime | PO | — |
+| 0.9 | 14/04/2026 | Revisão técnica interna (RNF de borda, regras de OEE) | PO + equipe técnica | Coordenação do projeto |
+| **1.0** | **24/04/2026** | **Linha de base aprovada** (ENT-1.1): RF-001..RF-028, RNF-001..RNF-014, RN-01..RN-10 | PO | Gerência de P&D da MetalPrime (MetalPrime), em ata da reunião de 24/04/2026; Coordenação do projeto (LASIN) |
 
 **Nota:** a partir da v1.0, qualquer inclusão, exclusão ou alteração de requisito segue o processo de Solicitação de Mudança da **seção 13 do PTA**: registro de SM-xx pelo PO, análise de impacto em até 10 dias úteis, decisão em ata e, havendo impacto em meta, valor ou prazo, termo aditivo assinado antes da execução. Ajustes sem esse impacto geram versões v1.x.

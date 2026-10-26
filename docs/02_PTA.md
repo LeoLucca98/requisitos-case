@@ -31,9 +31,9 @@
 | Instrumento | Convênio Fundepes nº 042/2026 |
 | Vigência | 01/03/2026 a 28/02/2027 (12 meses) |
 | Valor global | R$ 600.000,00 (seiscentos mil reais) |
-| Coordenador | Prof. Dr. Leandro Dias (docente do LASIN) — 10 h/semana |
-| Interlocutor técnico da MetalPrime | Eng. Juliana Mendes Prado, Gerente de P&D |
-| Gestora do convênio na Fundepes | Adm. Carla Beatriz Lins, Analista de Projetos |
+| Coordenador | Coordenação do projeto (docente do LASIN) — 10 h/semana |
+| Interlocutor técnico da MetalPrime | Gerência de P&D da MetalPrime, Gerente de P&D |
+| Gestora do convênio na Fundepes | Analista de projetos da Fundepes, Analista de Projetos |
 
 Convenção de meses: Mês 1 = março/2026 e Mês 12 = fevereiro/2027.
 
@@ -200,15 +200,15 @@ Se alguma premissa não se confirmar, a situação deve ser comunicada formalmen
 
 ## 9. Equipe e dedicação
 
-| Papel | Nome | Qtde | Dedicação | Vínculo |
-|---|---|---|---|---|
-| Coordenador (docente) | Prof. Dr. Leandro Dias | 1 | 10 h/sem | Sem remuneração pelo projeto |
-| Product Owner / Analista de Requisitos | Leonardo Lucca | 1 | 40 h/sem | CLT via Fundepes |
-| Engenheiro de software sênior (backend/edge) | Felipe Andrade Rocha | 1 | 40 h/sem | CLT via Fundepes |
-| Desenvolvedor full stack | Lucas Henrique Barros | 1 | 40 h/sem | CLT via Fundepes |
-| Cientista de dados (ML) | Dra. Aline Souza Medeiros | 1 | 40 h/sem | CLT via Fundepes |
-| Engenheiro de automação (OPC UA/CLP) | Thiago Melo Cavalcante | 1 | 40 h/sem | CLT via Fundepes |
-| Bolsistas de graduação | Gabriel Lima Santos; Beatriz Oliveira Nunes | 2 | 20 h/sem cada | Bolsa de iniciação tecnológica |
+| Papel | Qtde | Dedicação | Vínculo |
+|---|---|---|---|
+| Coordenador (docente) | 1 | 10 h/sem | Sem remuneração pelo projeto |
+| Product Owner / Analista de Requisitos | 1 | 40 h/sem | CLT via Fundepes |
+| Engenheiro de software sênior (backend/edge) | 1 | 40 h/sem | CLT via Fundepes |
+| Desenvolvedor full stack | 1 | 40 h/sem | CLT via Fundepes |
+| Cientista de dados (ML) | 1 | 40 h/sem | CLT via Fundepes |
+| Engenheiro de automação (OPC UA/CLP) | 1 | 40 h/sem | CLT via Fundepes |
+| Bolsistas de graduação | 2 | 20 h/sem cada | Bolsa de iniciação tecnológica |
 
 **Total: 8 pessoas.** Responsabilidades principais: o PO responde pela linha de base de requisitos, pela rastreabilidade, pelo controle de mudanças (seção 13) e pela preparação dos aceites. O coordenador responde academicamente e assina os relatórios.
 
@@ -254,14 +254,14 @@ Legenda: ■ = execução; ◆ = mês da entrega principal da meta.
 Os valores mensais são o **custo total para o projeto**: remuneração, encargos e provisões, no caso de CLT, ou valor da bolsa.
 
 | Papel | Qtde | Custo mensal (R$) | Meses | Total (R$) |
-|---|---|---|---|---|
-| Coordenador (docente) | 1 | — | 12 | 0,00 |
-| Product Owner / Analista de Requisitos | 1 | 6.500,00 | 12 | 78.000,00 |
+|---|---|---|---|
+| Coordenador (docente) | — | 12 | 0,00 |
+| Product Owner / Analista de Requisitos | 6.500,00 | 12 | 78.000,00 |
 | Engenheiro de software sênior | 1 | 8.500,00 | 12 | 102.000,00 |
-| Desenvolvedor full stack | 1 | 6.000,00 | 12 | 72.000,00 |
-| Cientista de dados (ML) | 1 | 7.000,00 | 12 | 84.000,00 |
+| Desenvolvedor full stack | 6.000,00 | 12 | 72.000,00 |
+| Cientista de dados (ML) | 7.000,00 | 12 | 84.000,00 |
 | Engenheiro de automação | 1 | 7.000,00 | 12 | 84.000,00 |
-| Bolsistas de graduação | 2 | 750,00 cada | 12 | 18.000,00 |
+| Bolsistas de graduação | 750,00 cada | 12 | 18.000,00 |
 | **Total Pessoal** | **8** | | | **438.000,00** |
 
 Esforço de referência: 6 pessoas × 40 h/sem mais 2 × 20 h/sem, cerca de 13.900 horas-pessoa em 12 meses (sem contar o coordenador).
@@ -335,9 +335,9 @@ Os gateways MP-Edge **não** são custeados pelo convênio: a MetalPrime os forn
 
 ## 16. Assinaturas
 
-| Parte | Nome | Cargo | Assinatura | Data |
+| Parte | Representante | Cargo | Assinatura | Data |
 |---|---|---|---|---|
-| LASIN / Universidade | Prof. Dr. Leandro Dias | Coordenador do projeto | __________ | 20/02/2026 |
-| Fundepes | Dr. Eduardo Farias Lessa | Diretor-Presidente | __________ | 20/02/2026 |
-| MetalPrime Automação Industrial Ltda. | Roberto Siqueira Campos | Diretor Industrial | __________ | 20/02/2026 |
-| MetalPrime (ciência técnica) | Eng. Juliana Mendes Prado | Gerente de P&D | __________ | 20/02/2026 |
+| LASIN / Universidade | Coordenação do projeto | Coordenador do projeto | __________ | 20/02/2026 |
+| Fundepes | Diretoria da Fundepes | Diretor-Presidente | __________ | 20/02/2026 |
+| MetalPrime Automação Industrial Ltda. | Diretoria Industrial da MetalPrime | Diretor Industrial | __________ | 20/02/2026 |
+| MetalPrime (ciência técnica) | Gerência de P&D da MetalPrime | Gerente de P&D | __________ | 20/02/2026 |

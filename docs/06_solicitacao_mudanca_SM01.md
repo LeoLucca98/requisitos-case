@@ -1,7 +1,7 @@
 # 06 — Solicitação de Mudança SM-01 — SENTINELA
 
 > Convênio Fundepes nº 042/2026 · PTA v1.0 (aprovado em 20/02/2026) · Linha de base: PTA v1.0 + Requisitos v1.0 (24/04/2026)
-> Formulário conforme PTA §13, itens 2 a 7. Registro e custódia: Leonardo Lucca (PO).
+> Formulário conforme PTA §13, itens 2 a 7. Registro e custódia: PO.
 
 ---
 
@@ -12,10 +12,10 @@
 | **Nº da SM** | **SM-01** |
 | **Data de registro** | **10/07/2026** (sexta-feira, Mês 5, Sprint S10) — 2 dias úteis após a reunião de 08/07/2026, dentro do prazo da regra de comunicação (doc. 01 §5) |
 | **Título** | Inclusão de rastreabilidade por número de série (DataMatrix), coleta Modbus TCP da estação de inspeção e integração com o MES VeltraTrace |
-| **Solicitante** | Eng. Juliana Mendes Prado — Gerente de P&D, MetalPrime Automação Industrial Ltda. (STK-06 / PREM-06) |
+| **Solicitante** | Gerência de P&D da MetalPrime — Gerente de P&D, MetalPrime Automação Industrial Ltda. (STK-06 / PREM-06) |
 | **Origem da demanda** | Veltra Motors (STK-10), exigência de fornecimento comunicada à MetalPrime em **30/06/2026** e apresentada ao projeto na reunião mensal de acompanhamento de **08/07/2026** |
-| **Registrada por** | Leonardo Lucca (PO, STK-03) |
-| **Responsável pela análise de impacto** | PO + equipe técnica (Felipe Andrade Rocha, Thiago Melo Cavalcante, Dra. Aline Souza Medeiros, Lucas Henrique Barros) |
+| **Registrada por** | PO (STK-03) |
+| **Responsável pela análise de impacto** | PO + equipe técnica (Engenharia de software sênior, Engenharia de automação, Ciência de dados, Desenvolvimento full stack) |
 | **Prazo da análise (PTA §13, item 3)** | Até 10 dias úteis → limite 24/07/2026; **meta interna: 17/07/2026** |
 | **Situação atual** | Encerrada — **Aprovada (alternativa D)**, formalizada no termo aditivo nº 01 (ver §11) |
 
@@ -122,7 +122,7 @@ Matriz reversa de referência: Matriz de Rastreabilidade, tabela A.5 — "Requis
 | Anexo | Documento | Data | Conteúdo relevante |
 |---|---|---|---|
 | A-01 | **Ofício Veltra Motors VM-SQF-0412/2026**, "Requisitos de rastreabilidade de peças soldadas — fornecedores Tier 1", dirigido aos fornecedores e encaminhado pela MetalPrime | 30/06/2026 | Exigência de genealogia por número de série a partir de 2027; campos obrigatórios; envio ao VeltraTrace em ≤ 5 min; referência à IATF 16949 |
-| A-02 | **Ata da reunião mensal de acompanhamento nº 05/2026** (LASIN/MetalPrime) | 08/07/2026 | Apresentação da exigência por Juliana Prado; informação de que a estação de inspeção da CEL-04 só expõe Modbus TCP; encaminhamento: "PO registra SM em até 2 dias úteis; nenhuma atividade antes do CCB" |
+| A-02 | **Ata da reunião mensal de acompanhamento nº 05/2026** (LASIN/MetalPrime) | 08/07/2026 | Apresentação da exigência por Gerência de P&D da MetalPrime; informação de que a estação de inspeção da CEL-04 só expõe Modbus TCP; encaminhamento: "PO registra SM em até 2 dias úteis; nenhuma atividade antes do CCB" |
 | A-03 | E-mail de encaminhamento da MetalPrime com a especificação preliminar da API VeltraTrace (versão de rascunho, sem ambiente de homologação ainda liberado) | 09/07/2026 | Estrutura do payload; autenticação; códigos de resposta |
 | A-04 | Extrato da matriz de rastreabilidade v1.0 (tabela A.5) e do PTA v1.0 §7 | 10/07/2026 | Prova de que FE-01..FE-04 estavam excluídos e aprovados em 20/02/2026 e 24/04/2026 |
 | A-05 | Inventário de equipamentos da CEL-04 (ENT-1.2) | 24/04/2026 | Estação de inspeção listada como "não mapeada" |
@@ -138,7 +138,7 @@ Matriz reversa de referência: Matriz de Rastreabilidade, tabela A.5 — "Requis
 5. **Enquadramento P&D:** há indícios de incerteza técnica nova (sincronização e vínculo peça–ciclo–inspeção sob restrição de recursos de borda; entrega garantida em ≤ 5 min com conectividade intermitente). A análise deverá caracterizá-las formalmente.
 6. **Recomendação preliminar:** admitir a SM para análise de impacto completa, com alternativas, a ser entregue até **17/07/2026**; manter a proibição de execução informal (PTA §13, item 6).
 
-Assinatura: Leonardo Lucca (PO) — 10/07/2026.
+Assinatura: PO — 10/07/2026.
 
 ---
 
@@ -146,14 +146,14 @@ Assinatura: Leonardo Lucca (PO) — 10/07/2026.
 
 | # | Etapa | Responsável | Data | Resultado |
 |---|---|---|---|---|
-| 1 | Apresentação da exigência na reunião mensal | Juliana Prado (MetalPrime) | 08/07/2026 | Encaminhada para registro de SM (ata nº 05/2026) |
+| 1 | Apresentação da exigência na reunião mensal | Gerência de P&D da MetalPrime (MetalPrime) | 08/07/2026 | Encaminhada para registro de SM (ata nº 05/2026) |
 | 2 | **Registro da SM-01** | PO | **10/07/2026** | Registrada; log de mudanças atualizado (Registro de Backlog e Riscos §8) |
-| 3 | CCB — admissibilidade | Coordenador, PO, Juliana Prado | 14/07/2026 | SM admitida; análise de impacto autorizada; confirmada a não execução até decisão |
-| 4 | Visita técnica à CEL-04 (já planejada para julho, RSK-01) | Thiago Melo Cavalcante, PO | 15/07/2026 | Confirmado: CLP da estação de inspeção só expõe Modbus TCP; leitura de DataMatrix inexistente na célula |
+| 3 | CCB — admissibilidade | Coordenador, PO, Gerência de P&D da MetalPrime | 14/07/2026 | SM admitida; análise de impacto autorizada; confirmada a não execução até decisão |
+| 4 | Visita técnica à CEL-04 (já planejada para julho, RSK-01) | Engenharia de automação, PO | 15/07/2026 | Confirmado: CLP da estação de inspeção só expõe Modbus TCP; leitura de DataMatrix inexistente na célula |
 | 5 | **Análise de impacto concluída** (Análise de Impacto da SM-01) | PO + equipe técnica | **17/07/2026** | Entregue em 5 dias úteis (prazo: 10 dias úteis) |
-| 6 | CCB — deliberação técnica | Coordenador, PO, Juliana Prado | 21/07/2026 | Recomendação da alternativa D encaminhada à Diretoria da MetalPrime |
-| 7 | **Aprovação MetalPrime** (Diretoria Industrial + P&D) | Roberto Siqueira Campos; Eng. Juliana Mendes Prado | **31/07/2026** | Aprovada a alternativa D: META-5 + R$ 180.000,00 + 4 meses |
-| 8 | **Submissão à Fundepes** (ofício + dossiê: justificativa, PTA v2.0, plano de aplicação) | Prof. Dr. Leandro Dias | **05/08/2026** | Protocolada; análise por Adm. Carla Beatriz Lins |
+| 6 | CCB — deliberação técnica | Coordenador, PO, Gerência de P&D da MetalPrime | 21/07/2026 | Recomendação da alternativa D encaminhada à Diretoria da MetalPrime |
+| 7 | **Aprovação MetalPrime** (Diretoria Industrial + P&D) | Diretoria Industrial da MetalPrime; Gerência de P&D da MetalPrime | **31/07/2026** | Aprovada a alternativa D: META-5 + R$ 180.000,00 + 4 meses |
+| 8 | **Submissão à Fundepes** (ofício + dossiê: justificativa, PTA v2.0, plano de aplicação) | Coordenação do projeto | **05/08/2026** | Protocolada; análise por Analista de projetos da Fundepes |
 | 9 | **Assinatura do termo aditivo nº 01** | LASIN/Universidade, Fundepes, MetalPrime | **02/09/2026** | Vigência até 30/06/2027; valor total R$ 780.000,00 |
 | 10 | Atualização da linha de base (PTA v2.0, requisitos com RF-101..RF-110 e RNF-101..RNF-105, matriz v1.1) e abertura do backlog da META-5 | PO | Após 02/09/2026 | Execução da META-5 a partir do mês 9 |
 
@@ -171,7 +171,7 @@ Assinatura: Leonardo Lucca (PO) — 10/07/2026.
 | Condicionantes | (i) Nenhuma atividade de META-5 antes da assinatura do aditivo; (ii) FE-02 convertido apenas para o VeltraTrace; FE-03 apenas para Modbus TCP da estação de inspeção da CEL-04; FE-05 permanece fora; (iii) RN-04 mantida para o OEE; (iv) MetalPrime viabiliza junto à Veltra o acesso ao ambiente de homologação do VeltraTrace até o mês 9 |
 | Formalização | Termo aditivo nº 01 ao Convênio Fundepes nº 042/2026, assinado em **02/09/2026** |
 
-**Assinaturas (CCB):** Prof. Dr. Leandro Dias (Coordenador) · Leonardo Lucca (PO) · Eng. Juliana Mendes Prado (MetalPrime) · Roberto Siqueira Campos (MetalPrime, aprovação de valor e prazo).
+**Assinaturas (CCB):** Coordenação do projeto · PO · Gerência de P&D da MetalPrime (MetalPrime) · Diretoria Industrial da MetalPrime (MetalPrime, aprovação de valor e prazo).
 
 ---
 

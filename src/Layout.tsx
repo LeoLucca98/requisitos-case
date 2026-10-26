@@ -22,7 +22,7 @@ export default function Layout() {
       <Outlet />
       <footer className="footer">
         <span>Projeto SENTINELA · Convênio Fundepes nº 042/2026 · LASIN</span>
-        <span>Coordenação: Prof. Dr. Leandro Dias · Produto: Leonardo Lucca</span>
+        <span>Estudo de caso de gestão de produto em P&amp;D</span>
       </footer>
     </>
   )

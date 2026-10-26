@@ -2,7 +2,7 @@
 
 > Convênio Fundepes nº 042/2026 · PTA v1.0 (aprovado em 20/02/2026) · Vigência original 01/03/2026 a 28/02/2027 · R$ 600.000,00
 > **Retrato em 08/07/2026 (Mês 5 = julho/2026), antes da apresentação da exigência da Veltra Motors na reunião mensal de acompanhamento.** Linha de base: PTA v1.0 + Requisitos v1.0 (24/04/2026).
-> Responsável: Leonardo Lucca (PO) · Validação: Prof. Dr. Leandro Dias (Coordenador).
+> Responsável: PO · Validação: Coordenação do projeto.
 
 **Calendário de sprints (quinzenais, segunda a sexta da 2ª semana).** S1 começou em 02/03/2026. Em 08/07/2026 o projeto está na **Sprint 10 (06/07–17/07)**. A vigência original comporta 26 sprints (S26 termina em 26/02/2027).
 
@@ -180,7 +180,7 @@ Pontos em escala de Fibonacci. "Sprint" é a sprint de conclusão (realizada ou 
 | PREM-03 | 6 meses de histórico de falhas disponíveis até o mês 4 | MetalPrime / Ferraz | Parcialmente cumprida | 4 meses recebidos em 22/06/2026; os 2 meses restantes prometidos para 31/07/2026. Vinculado a RSK-03 |
 | PREM-04 | Documentação técnica do MP-Edge até o mês 1 | MetalPrime | Confirmada | SDK e limites de hardware recebidos em 16/03/2026 |
 | PREM-05 | Ferraz autoriza visitas e operação assistida nos meses 10–12 | MetalPrime / Ferraz | A confirmar | Confirmação formal depende do ENT-4.1 (dez/2026) |
-| PREM-06 | Interlocutor técnico da MetalPrime disponível | MetalPrime | Confirmada | Eng. Juliana Mendes Prado; presente em todas as reuniões mensais |
+| PREM-06 | Interlocutor técnico da MetalPrime disponível | MetalPrime | Confirmada | Gerência de P&D da MetalPrime; presente em todas as reuniões mensais |
 
 ---
 
@@ -190,18 +190,18 @@ Escala: Probabilidade (P) e Impacto (I) de 1 (muito baixo) a 5 (muito alto). Exp
 
 | ID | Risco | P | I | Exp. | Resposta | Dono | Status |
 |---|---|---|---|---|---|---|---|
-| RSK-01 | **Equipamento da CEL-04 com protocolo não-OPC UA** (ex.: Modbus TCP, PROFINET), especialmente na estação de inspeção ainda não mapeada, invalidando PREM-01 | 3 | 4 | 12 | Mitigar: mapear a estação na visita de julho. Se confirmado, o PTA prevê conversor fornecido pela MetalPrime/planta (FE-03) ou abertura de SM pelo PTA §13. A coleta nativa de outro protocolo não entra sem SM | Thiago Melo Cavalcante | Aberto — monitorado |
-| RSK-02 | **Solicitação de escopo vinda do cliente final (Veltra Motors)**, via MetalPrime ou Ferraz, sobre requisitos de fornecimento (ex.: qualidade/rastreabilidade), pressionando a equipe a absorver trabalho fora da linha de base | 3 | 5 | 15 | Mitigar: **processo de Solicitação de Mudança do PTA §13** — registro como SM-xx em até 2 dias úteis, análise de impacto em até 10 dias úteis, CCB e termo aditivo quando afetar meta, valor ou prazo; FE-01 a FE-05 como fronteira explícita; STK-10 monitorado | Leonardo Lucca (PO) | Aberto — monitorado |
-| RSK-03 | Atraso ou insuficiência do histórico de falhas (PREM-03), comprometendo ENT-3.1 e ENT-3.2 | 4 | 4 | 16 | Mitigar: cobrar os 2 meses restantes até 31/07; usar dados coletados desde maio e técnicas não supervisionadas; escalar na reunião mensal | Dra. Aline Souza Medeiros | Aberto — em tratamento |
-| RSK-04 | Modelos não atingem CS-03 (≥ 70% de detecção com ≥ 4 h; precisão ≥ 80%) por dados desbalanceados (IT-2) | 3 | 4 | 12 | Aceitar/mitigar: protocolo com ≥ 3 técnicas; resultado negativo documentado é aceito (PTA §14, item 5); alinhar expectativa com a Ferraz | Dra. Aline Souza Medeiros | Aberto |
-| RSK-05 | Inferência embarcada excede limites do MP-Edge (RNF-003, RST-03) | 3 | 4 | 12 | Mitigar: quantização e poda; perfil de carga de ENT-1.4 como referência (pico de CPU de 41% na coleta) | Felipe Andrade Rocha | Aberto |
-| RSK-06 | Aceite de ENT-2.3 após 01/09, atrasando a 3ª parcela (R$ 150.000) | 3 | 3 | 9 | Mitigar: demonstração do ENT-2.3 antecipada para a review do S13 em 28/08 (DEC-07); saldo de R$ 95.100 cobre ~2,5 meses de pessoal | Leonardo Lucca (PO) | Aberto |
-| RSK-07 | Janelas de acesso à CEL-04 insuficientes (produção, normas de segurança RST-06) | 2 | 4 | 8 | Mitigar: agenda trimestral de visitas acordada com a Ferraz; uso do kit de bancada OPC UA | Thiago Melo Cavalcante | Aberto |
-| RSK-08 | Desvio do OEE > 5 p.p. por baixa qualidade da apuração de referência (ENT-2.4) | 2 | 3 | 6 | Mitigar: apontamento manual assistido e auditado por amostragem (RN-10, DEC-06) | Lucas Henrique Barros | Aberto |
-| RSK-09 | Vulnerabilidade crítica/alta no teste de intrusão atrasando o piloto (RNF-007) | 2 | 4 | 8 | Mitigar: pentest no mês 8, com 2 meses de folga antes do ENT-4.1; revisão de segurança OPC UA em cada review | Felipe Andrade Rocha | Aberto |
-| RSK-10 | Saída de membro da equipe (bolsistas ou pessoa-chave) | 2 | 3 | 6 | Mitigar: carga sustentável (CS-09), pareamento, documentação contínua no repositório | Prof. Dr. Leandro Dias | Aberto |
-| RSK-11 | Conectividade intermitente na planta degradando a coleta e o dashboard | 3 | 2 | 6 | Mitigar: store-and-forward e buffer ≥ 72 h (RF-005, RNF-004) já entregues e testados | Felipe Andrade Rocha | Mitigado parcialmente |
-| RSK-12 | Glosa ou questionamento do enquadramento P&D por despesa ou atividade não P&D | 1 | 5 | 5 | Evitar: rastreabilidade requisito → ENT → META (matriz 04); revisão trimestral com STK-08; nada executado fora do PTA (CS-07) | Leonardo Lucca (PO) | Aberto |
+| RSK-01 | **Equipamento da CEL-04 com protocolo não-OPC UA** (ex.: Modbus TCP, PROFINET), especialmente na estação de inspeção ainda não mapeada, invalidando PREM-01 | 3 | 4 | 12 | Mitigar: mapear a estação na visita de julho. Se confirmado, o PTA prevê conversor fornecido pela MetalPrime/planta (FE-03) ou abertura de SM pelo PTA §13. A coleta nativa de outro protocolo não entra sem SM | Engenharia de automação | Aberto — monitorado |
+| RSK-02 | **Solicitação de escopo vinda do cliente final (Veltra Motors)**, via MetalPrime ou Ferraz, sobre requisitos de fornecimento (ex.: qualidade/rastreabilidade), pressionando a equipe a absorver trabalho fora da linha de base | 3 | 5 | 15 | Mitigar: **processo de Solicitação de Mudança do PTA §13** — registro como SM-xx em até 2 dias úteis, análise de impacto em até 10 dias úteis, CCB e termo aditivo quando afetar meta, valor ou prazo; FE-01 a FE-05 como fronteira explícita; STK-10 monitorado | PO | Aberto — monitorado |
+| RSK-03 | Atraso ou insuficiência do histórico de falhas (PREM-03), comprometendo ENT-3.1 e ENT-3.2 | 4 | 4 | 16 | Mitigar: cobrar os 2 meses restantes até 31/07; usar dados coletados desde maio e técnicas não supervisionadas; escalar na reunião mensal | Ciência de dados | Aberto — em tratamento |
+| RSK-04 | Modelos não atingem CS-03 (≥ 70% de detecção com ≥ 4 h; precisão ≥ 80%) por dados desbalanceados (IT-2) | 3 | 4 | 12 | Aceitar/mitigar: protocolo com ≥ 3 técnicas; resultado negativo documentado é aceito (PTA §14, item 5); alinhar expectativa com a Ferraz | Ciência de dados | Aberto |
+| RSK-05 | Inferência embarcada excede limites do MP-Edge (RNF-003, RST-03) | 3 | 4 | 12 | Mitigar: quantização e poda; perfil de carga de ENT-1.4 como referência (pico de CPU de 41% na coleta) | Engenharia de software sênior | Aberto |
+| RSK-06 | Aceite de ENT-2.3 após 01/09, atrasando a 3ª parcela (R$ 150.000) | 3 | 3 | 9 | Mitigar: demonstração do ENT-2.3 antecipada para a review do S13 em 28/08 (DEC-07); saldo de R$ 95.100 cobre ~2,5 meses de pessoal | PO | Aberto |
+| RSK-07 | Janelas de acesso à CEL-04 insuficientes (produção, normas de segurança RST-06) | 2 | 4 | 8 | Mitigar: agenda trimestral de visitas acordada com a Ferraz; uso do kit de bancada OPC UA | Engenharia de automação | Aberto |
+| RSK-08 | Desvio do OEE > 5 p.p. por baixa qualidade da apuração de referência (ENT-2.4) | 2 | 3 | 6 | Mitigar: apontamento manual assistido e auditado por amostragem (RN-10, DEC-06) | Desenvolvimento full stack | Aberto |
+| RSK-09 | Vulnerabilidade crítica/alta no teste de intrusão atrasando o piloto (RNF-007) | 2 | 4 | 8 | Mitigar: pentest no mês 8, com 2 meses de folga antes do ENT-4.1; revisão de segurança OPC UA em cada review | Engenharia de software sênior | Aberto |
+| RSK-10 | Saída de membro da equipe (bolsistas ou pessoa-chave) | 2 | 3 | 6 | Mitigar: carga sustentável (CS-09), pareamento, documentação contínua no repositório | Coordenação do projeto | Aberto |
+| RSK-11 | Conectividade intermitente na planta degradando a coleta e o dashboard | 3 | 2 | 6 | Mitigar: store-and-forward e buffer ≥ 72 h (RF-005, RNF-004) já entregues e testados | Engenharia de software sênior | Mitigado parcialmente |
+| RSK-12 | Glosa ou questionamento do enquadramento P&D por despesa ou atividade não P&D | 1 | 5 | 5 | Evitar: rastreabilidade requisito → ENT → META (matriz 04); revisão trimestral com STK-08; nada executado fora do PTA (CS-07) | PO | Aberto |
 
 ---
 
@@ -210,7 +210,7 @@ Escala: Probabilidade (P) e Impacto (I) de 1 (muito baixo) a 5 (muito alto). Exp
 | ID | Data | Decisão | Fórum / aprovadores | Referência |
 |---|---|---|---|---|
 | DEC-01 | 02/03/2026 | Adotar Scrum com sprints quinzenais (S1 em 02/03), refinamento semanal e review com a Engenharia de Produto da MetalPrime | Kick-off — Coordenador, PO, equipe | Doc. 01 §5 |
-| DEC-02 | 24/04/2026 | Publicação borda → backend por MQTT sobre TLS 1.2+, com buffer local persistente (store-and-forward) | Revisão técnica do ENT-1.2 — Coordenador, Eng. Juliana Mendes Prado | RF-005, RF-007, RNF-006 |
+| DEC-02 | 24/04/2026 | Publicação borda → backend por MQTT sobre TLS 1.2+, com buffer local persistente (store-and-forward) | Revisão técnica do ENT-1.2 — Coordenador, Gerência de P&D da MetalPrime | RF-005, RF-007, RNF-006 |
 | DEC-03 | 24/04/2026 | Aprovar Requisitos v1.0 como linha de base (RF-001..RF-028, RNF-001..RNF-014, RN-01..RN-10); faixa RF-101+/RNF-101+ reservada para mudanças via SM | Ata da reunião de 24/04/2026 | Doc. 03 §7; PTA §13 |
 | DEC-04 | 24/04/2026 | Qualidade do OEE calculada por contadores agregados OK/refugo da célula, sem identificação de peças | Aprovação da linha de base | RN-01, RN-04; FE-01 |
 | DEC-05 | 13/05/2026 | Agregar os sinais de solda na borda em janelas de 1 s, sem envio contínuo do sinal bruto (redução de volume medida de 87%) | Alinhamento de coordenação após experimentos do ENT-1.4 | RF-006; IT-1 |

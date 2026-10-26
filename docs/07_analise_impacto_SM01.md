@@ -2,7 +2,7 @@
 
 > Convênio Fundepes nº 042/2026 · PTA v1.0 (20/02/2026) · Linha de base: PTA v1.0 + Requisitos v1.0 (24/04/2026)
 > **Data: 17/07/2026** (Mês 5, Sprint S10) — 5 dias úteis após o registro da SM-01 (prazo do PTA §13, item 3: 10 dias úteis).
-> Elaboração: Leonardo Lucca (PO) · Contribuições técnicas: Felipe Andrade Rocha (borda/backend), Thiago Melo Cavalcante (automação/Modbus), Dra. Aline Souza Medeiros (dados/ML), Lucas Henrique Barros (full stack) · Validação: Prof. Dr. Leandro Dias (Coordenador).
+> Elaboração: PO · Contribuições técnicas: Engenharia de software sênior (borda/backend), Engenharia de automação (automação/Modbus), Ciência de dados (dados/ML), Desenvolvimento full stack (full stack) · Validação: Coordenação do projeto.
 > Referências: Solicitação de Mudança SM-01, PTA v1.0 §3, §5, §7, §11–§13, Especificação de Requisitos v1.0, Matriz de Rastreabilidade, Backlog, Roadmap e Registro de Riscos.
 
 ---
@@ -157,11 +157,11 @@ O aditivo **não remunera em dobro** quem já é pago pelo orçamento original n
 |---|---|---|---|---|
 | Product Owner | 6.500,00 | 75% (30 h/sem) | 3,0 | 19.500,00 |
 | Engenheiro de software sênior | 8.500,00 | 100% (40 h/sem) | 4,0 | 34.000,00 |
-| Desenvolvedor full stack | 6.000,00 | 87,5% (35 h/sem) | 3,5 | 21.000,00 |
+| Desenvolvedor full stack | 87,5% (35 h/sem) | 3,5 | 21.000,00 |
 | Engenheiro de automação | 7.000,00 | 100% (40 h/sem) | 4,0 | 28.000,00 |
-| Cientista de dados (ML) | 7.000,00 | 75% (30 h/sem) | 3,0 | 21.000,00 |
+| Cientista de dados (ML) | 75% (30 h/sem) | 3,0 | 21.000,00 |
 | Bolsista de IT adicional (3º bolsista, 20 h/sem) | 750,00 | meses 11–16 | 6,0 bolsa-meses | 4.500,00 |
-| Coordenador (docente) | — | 10 h/sem, sem remuneração | — | 0,00 |
+| Coordenador (docente) | 10 h/sem, sem remuneração | — | 0,00 |
 | **Total Pessoal (aditivo)** | | | **17,5 MP CLT + 6 bolsa-meses** | **128.000,00** |
 
 **Por que dedicação ajustada:** nos meses 13–16, a META-3 já estará encerrada (mês 11). O pico de trabalho fica na integração (engenheiro sênior), no piloto com Modbus (engenheiro de automação) e na validação. PO, full stack e cientista de dados ficam com dedicação parcial, o que evita pagar capacidade ociosa. O Coordenador formaliza a redução de jornada por termo junto à Fundepes, conforme suas normas.
@@ -258,12 +258,12 @@ Mês 13 = março/2027 · Mês 16 = junho/2027. Sprints adicionais S27 (01/03/202
 
 | ID | Risco | P | I | Exp. | Resposta | Dono |
 |---|---|---|---|---|---|---|
-| RSK-13 | Ambiente de homologação ou contrato da API VeltraTrace indisponível ou instável até o mês 9 | 3 | 4 | 12 | Mitigar: condicionante da aprovação (PREM-07); simulador do VeltraTrace a partir do OpenAPI (ENT-5.1); escalonamento via STK-06 | Leonardo Lucca (PO) |
-| RSK-14 | Coleta multiprotocolo + fila + inferência excedem CPU/memória do MP-Edge (RNF-103, RST-03) | 3 | 4 | 12 | Mitigar: medição conjunta no ENT-5.2; *polling* Modbus de baixa frequência; priorização de processos | Felipe Andrade Rocha |
-| RSK-15 | Taxa de leitura DataMatrix < 99,5% por respingos, oxidação ou marcação de baixa qualidade nas peças | 3 | 4 | 12 | Mitigar: ensaio de leitura na visita do mês 9; ajuste de posição e iluminação; registro de exceção (RF-103) | Thiago Melo Cavalcante |
-| RSK-16 | Trâmite do aditivo após o mês 8 reduz a janela da META-5 | 2 | 4 | 8 | Mitigar: dossiê completo (esta análise + PTA v2.0) e submissão até 05/08/2026; acompanhamento semanal com a Fundepes | Prof. Dr. Leandro Dias |
-| RSK-17 | Sobreposição dos picos da META-3 e da META-5 nos meses 9–11 | 3 | 3 | 9 | Mitigar: META-5 nos meses 9–11 concentrada em especificação e Modbus (PO, engenheiro de automação, bolsista); engenheiro sênior entra com força a partir do mês 11 | Leonardo Lucca (PO) |
-| RSK-18 | Correlação peça–ciclo–inspeção falha em retrabalho ou retirada manual de peça (IT-5) | 3 | 4 | 12 | Mitigar: modelagem dos fluxos de exceção com a Ferraz no ENT-5.1; testes com cenários de fila (CA-RF106-1) | Felipe Andrade Rocha |
+| RSK-13 | Ambiente de homologação ou contrato da API VeltraTrace indisponível ou instável até o mês 9 | 3 | 4 | 12 | Mitigar: condicionante da aprovação (PREM-07); simulador do VeltraTrace a partir do OpenAPI (ENT-5.1); escalonamento via STK-06 | PO |
+| RSK-14 | Coleta multiprotocolo + fila + inferência excedem CPU/memória do MP-Edge (RNF-103, RST-03) | 3 | 4 | 12 | Mitigar: medição conjunta no ENT-5.2; *polling* Modbus de baixa frequência; priorização de processos | Engenharia de software sênior |
+| RSK-15 | Taxa de leitura DataMatrix < 99,5% por respingos, oxidação ou marcação de baixa qualidade nas peças | 3 | 4 | 12 | Mitigar: ensaio de leitura na visita do mês 9; ajuste de posição e iluminação; registro de exceção (RF-103) | Engenharia de automação |
+| RSK-16 | Trâmite do aditivo após o mês 8 reduz a janela da META-5 | 2 | 4 | 8 | Mitigar: dossiê completo (esta análise + PTA v2.0) e submissão até 05/08/2026; acompanhamento semanal com a Fundepes | Coordenação do projeto |
+| RSK-17 | Sobreposição dos picos da META-3 e da META-5 nos meses 9–11 | 3 | 3 | 9 | Mitigar: META-5 nos meses 9–11 concentrada em especificação e Modbus (PO, engenheiro de automação, bolsista); engenheiro sênior entra com força a partir do mês 11 | PO |
+| RSK-18 | Correlação peça–ciclo–inspeção falha em retrabalho ou retirada manual de peça (IT-5) | 3 | 4 | 12 | Mitigar: modelagem dos fluxos de exceção com a Ferraz no ENT-5.1; testes com cenários de fila (CA-RF106-1) | Engenharia de software sênior |
 
 Riscos existentes: **RSK-01** e **RSK-02** passam a "Materializado — tratado pela SM-01". RSK-05 é reavaliado em conjunto com RSK-14. RSK-09 ganha o escopo complementar de revisão da integração.
 
@@ -316,10 +316,10 @@ A rastreabilidade requisito → ENT → META-5 → IT-5..IT-7 será incorporada 
 
 | # | Ação | Responsável | Data |
 |---|---|---|---|
-| 1 | CCB de deliberação técnica | Coordenador, PO, Juliana Prado | 21/07/2026 |
-| 2 | Aprovação formal da MetalPrime (Diretoria Industrial e P&D) | Roberto Siqueira Campos; Eng. Juliana Mendes Prado | 31/07/2026 |
+| 1 | CCB de deliberação técnica | Coordenador, PO, Gerência de P&D da MetalPrime | 21/07/2026 |
+| 2 | Aprovação formal da MetalPrime (Diretoria Industrial e P&D) | Diretoria Industrial da MetalPrime; Gerência de P&D da MetalPrime | 31/07/2026 |
 | 3 | Montagem do dossiê: justificativa do aditivo, PTA v2.0 e plano de aplicação | PO + Coordenador | até 04/08/2026 |
-| 4 | Submissão à Fundepes | Prof. Dr. Leandro Dias | 05/08/2026 |
+| 4 | Submissão à Fundepes | Coordenação do projeto | 05/08/2026 |
 | 5 | Assinatura do termo aditivo nº 01 | Partes | 02/09/2026 (previsão) |
 | 6 | Linha de base v2.0: requisitos (RF-101..RF-110, RNF-101..RNF-105), matriz v1.1, épico EP-05 e registro de riscos e premissas | PO | após a assinatura |
 | 7 | Compra do CLP de bancada Modbus e do leitor DataMatrix; contratação do 3º bolsista (início no mês 11) | Coordenador / Fundepes | após a assinatura |

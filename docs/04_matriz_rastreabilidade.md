@@ -1,6 +1,6 @@
 # 04 — Matriz de Rastreabilidade — SENTINELA
 
-> Elaboração e manutenção: Leonardo Lucca (PO). Destinatários: STK-02, STK-06, STK-07 e STK-08 (CS-08).
+> Elaboração e manutenção: PO. Destinatários: STK-02, STK-06, STK-07 e STK-08 (CS-08).
 > **Parte A** — linha de base v1.0 (PTA v1.0 + requisitos v1.0 de 24/04/2026), com status em 08/07/2026 (mês 5).
 > **Parte B** — matriz v1.1, após o termo aditivo nº 01 (assinado em 02/09/2026).
 > **Parte C** — como usar a matriz numa negociação de escopo.

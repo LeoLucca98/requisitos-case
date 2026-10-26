@@ -7,8 +7,8 @@
 |---|---|
 | Documento | Justificativa Técnica do Termo Aditivo nº 01 |
 | Data de submissão | **05/08/2026** |
-| Destinatária | Fundepes — Adm. Carla Beatriz Lins, Analista de Projetos (gestora do convênio) |
-| Elaboração | Leonardo Lucca (Product Owner) e Prof. Dr. Leandro Dias (Coordenador) |
+| Destinatária | Fundepes — Analista de projetos da Fundepes, Analista de Projetos (gestora do convênio) |
+| Elaboração | PO e Coordenação do projeto |
 | Base documental | PTA v1.0 (20/02/2026); Requisitos v1.0 (24/04/2026); Matriz de rastreabilidade v1.0; SM-01 (10/07/2026); Análise de impacto da SM-01 (17/07/2026); aprovação da MetalPrime (31/07/2026) |
 | Natureza do projeto | P&D — Lei nº 8.248/1991 (Lei de Informática) e alterações |
 
@@ -47,8 +47,8 @@
 | Plano de trabalho vigente | PTA v1.0, aprovado em 20/02/2026 |
 | Vigência atual | 01/03/2026 a 28/02/2027 (12 meses) |
 | Valor global atual | R$ 600.000,00 |
-| Coordenador | Prof. Dr. Leandro Dias |
-| Interlocutora técnica da MetalPrime | Eng. Juliana Mendes Prado, Gerente de P&D |
+| Coordenador | Coordenação do projeto |
+| Interlocutora técnica da MetalPrime | Gerência de P&D da MetalPrime, Gerente de P&D |
 
 ### 1.2 Aditivo
 
@@ -392,13 +392,13 @@ Custo mensal = custo total para o projeto (remuneração, encargos e provisões,
 
 | Papel | Nome | Custo mensal (R$) | Dedicação meses 13–16 | Meses-pessoa | Total (R$) |
 |---|---|---|---|---|---|
-| Product Owner / Analista de Requisitos | Leonardo Lucca | 6.500,00 | 75% (30 h/sem) | 3,0 | 19.500,00 |
-| Engenheiro de software sênior | Felipe Andrade Rocha | 8.500,00 | 100% (40 h/sem) | 4,0 | 34.000,00 |
-| Desenvolvedor full stack | Lucas Henrique Barros | 6.000,00 | 87,5% (35 h/sem) | 3,5 | 21.000,00 |
-| Engenheiro de automação | Thiago Melo Cavalcante | 7.000,00 | 100% (40 h/sem) | 4,0 | 28.000,00 |
-| Cientista de dados (ML) | Dra. Aline Souza Medeiros | 7.000,00 | 75% (30 h/sem) | 3,0 | 21.000,00 |
+| Product Owner / Analista de Requisitos | 6.500,00 | 75% (30 h/sem) | 3,0 | 19.500,00 |
+| Engenheiro de software sênior | Engenharia de software sênior | 8.500,00 | 100% (40 h/sem) | 4,0 | 34.000,00 |
+| Desenvolvedor full stack | 6.000,00 | 87,5% (35 h/sem) | 3,5 | 21.000,00 |
+| Engenheiro de automação | Engenharia de automação | 7.000,00 | 100% (40 h/sem) | 4,0 | 28.000,00 |
+| Cientista de dados (ML) | 7.000,00 | 75% (30 h/sem) | 3,0 | 21.000,00 |
 | Bolsista de iniciação tecnológica (3º bolsista, 20 h/sem) | A selecionar | 750,00 | Meses 11–16 | 6,0 bolsa-meses | 4.500,00 |
-| Coordenador (docente) | Prof. Dr. Leandro Dias | — | 10 h/sem, sem remuneração | — | 0,00 |
+| Coordenador (docente) | — | 10 h/sem, sem remuneração | — | 0,00 |
 | **Total** | | | | **17,5 MP CLT + 6 bolsa-meses** | **128.000,00** |
 
 **Por que dedicação ajustada:** nos meses 13–16 a META-3 já estará encerrada (mês 11). O pico fica na integração (engenheiro sênior) e no piloto com Modbus (engenheiro de automação), ambos a 100%. PO, full stack e cientista de dados ficam em dedicação parcial, o que evita pagar capacidade ociosa. A redução de jornada será formalizada por termo junto à Fundepes, conforme suas normas.
@@ -538,12 +538,12 @@ A numeração das parcelas do aditivo (5ª e 6ª) preserva a identificação das
 
 | ID | Risco | P | I | Exp. | Mitigação | Responsável |
 |---|---|---|---|---|---|---|
-| RSK-13 | Ambiente de homologação ou contrato da API VeltraTrace indisponível até o mês 9 | 3 | 4 | 12 | Condicionante PREM-07 (MetalPrime); simulador do VeltraTrace a partir do OpenAPI (ENT-5.1); escalonamento via Diretoria de P&D da MetalPrime | Leonardo Lucca |
-| RSK-14 | Coleta multiprotocolo + fila + inferência excedem CPU/memória do MP-Edge (RST-03) | 3 | 4 | 12 | Medição conjunta no ENT-5.2; polling Modbus de baixa frequência; priorização de processos | Felipe Andrade Rocha |
-| RSK-15 | Leitura DataMatrix < 99,5% por respingos, oxidação ou marcação de baixa qualidade | 3 | 4 | 12 | Ensaio de leitura na visita do mês 9; ajuste de posição e iluminação; registro de exceção (RF-103) | Thiago Melo Cavalcante |
-| RSK-16 | Trâmite do aditivo após o mês 8 reduz a janela da META-5 | 2 | 4 | 8 | Dossiê completo submetido em 05/08/2026; acompanhamento semanal com a Fundepes | Prof. Dr. Leandro Dias |
-| RSK-17 | Sobreposição dos picos da META-3 e da META-5 nos meses 9–11 | 3 | 3 | 9 | META-5 nos meses 9–11 concentrada em especificação e Modbus (PO, engenheiro de automação, bolsista); engenheiro sênior entra com força a partir do mês 11 | Leonardo Lucca |
-| RSK-18 | Correlação peça–ciclo–inspeção falha em retrabalho ou retirada manual (IT-5) | 3 | 4 | 12 | Modelagem dos fluxos de exceção com a Ferraz no ENT-5.1; testes com cenários de fila (CA-RF106-1) | Felipe Andrade Rocha |
+| RSK-13 | Ambiente de homologação ou contrato da API VeltraTrace indisponível até o mês 9 | 3 | 4 | 12 | Condicionante PREM-07 (MetalPrime); simulador do VeltraTrace a partir do OpenAPI (ENT-5.1); escalonamento via Diretoria de P&D da MetalPrime | PO |
+| RSK-14 | Coleta multiprotocolo + fila + inferência excedem CPU/memória do MP-Edge (RST-03) | 3 | 4 | 12 | Medição conjunta no ENT-5.2; polling Modbus de baixa frequência; priorização de processos | Engenharia de software sênior |
+| RSK-15 | Leitura DataMatrix < 99,5% por respingos, oxidação ou marcação de baixa qualidade | 3 | 4 | 12 | Ensaio de leitura na visita do mês 9; ajuste de posição e iluminação; registro de exceção (RF-103) | Engenharia de automação |
+| RSK-16 | Trâmite do aditivo após o mês 8 reduz a janela da META-5 | 2 | 4 | 8 | Dossiê completo submetido em 05/08/2026; acompanhamento semanal com a Fundepes | Coordenação do projeto |
+| RSK-17 | Sobreposição dos picos da META-3 e da META-5 nos meses 9–11 | 3 | 3 | 9 | META-5 nos meses 9–11 concentrada em especificação e Modbus (PO, engenheiro de automação, bolsista); engenheiro sênior entra com força a partir do mês 11 | PO |
+| RSK-18 | Correlação peça–ciclo–inspeção falha em retrabalho ou retirada manual (IT-5) | 3 | 4 | 12 | Modelagem dos fluxos de exceção com a Ferraz no ENT-5.1; testes com cenários de fila (CA-RF106-1) | Engenharia de software sênior |
 
 Escala: P e I de 1 a 5; exposição = P × I (≥ 12 alta; 6–11 média; ≤ 5 baixa).
 
@@ -586,11 +586,11 @@ As partes abaixo declaram que:
 
 ## 13. Assinaturas
 
-| Parte | Nome | Cargo | Assinatura | Data |
+| Parte | Representante | Cargo | Assinatura | Data |
 |---|---|---|---|---|
-| LASIN / Universidade | Prof. Dr. Leandro Dias | Coordenador do projeto | __________ | 05/08/2026 |
-| LASIN (elaboração técnica) | Leonardo Lucca | Product Owner / Analista de Requisitos | __________ | 05/08/2026 |
-| MetalPrime Automação Industrial Ltda. | Roberto Siqueira Campos | Diretor Industrial | __________ | 05/08/2026 |
-| MetalPrime (ciência técnica) | Eng. Juliana Mendes Prado | Gerente de P&D | __________ | 05/08/2026 |
-| Fundepes (recebimento e análise) | Adm. Carla Beatriz Lins | Analista de Projetos | __________ | ___/___/2026 |
-| Fundepes (de acordo) | Dr. Eduardo Farias Lessa | Diretor-Presidente | __________ | ___/___/2026 |
+| LASIN / Universidade | Coordenação do projeto | Coordenador do projeto | __________ | 05/08/2026 |
+| LASIN (elaboração técnica) | PO | Product Owner / Analista de Requisitos | 05/08/2026 |
+| MetalPrime Automação Industrial Ltda. | Diretoria Industrial da MetalPrime | Diretor Industrial | __________ | 05/08/2026 |
+| MetalPrime (ciência técnica) | Gerência de P&D da MetalPrime | Gerente de P&D | __________ | 05/08/2026 |
+| Fundepes (recebimento e análise) | Analista de projetos da Fundepes | Analista de Projetos | __________ | ___/___/2026 |
+| Fundepes (de acordo) | Diretoria da Fundepes | Diretor-Presidente | __________ | ___/___/2026 |
