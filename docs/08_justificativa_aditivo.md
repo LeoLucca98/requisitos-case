@@ -390,16 +390,16 @@ O ponto que merece atenção do analista é este: **o aditivo não paga horas da
 
 Custo mensal = custo total para o projeto (remuneração, encargos e provisões, no caso de CLT; ou valor da bolsa), conforme o PTA v1.0 §11.1, **sem reajuste**.
 
-| Papel | Nome | Custo mensal (R$) | Dedicação meses 13–16 | Meses-pessoa | Total (R$) |
-|---|---|---|---|---|---|
+| Papel | Custo mensal (R$) | Dedicação meses 13–16 | Meses-pessoa | Total (R$) |
+|---|---|---|---|---|
 | Product Owner / Analista de Requisitos | 6.500,00 | 75% (30 h/sem) | 3,0 | 19.500,00 |
-| Engenheiro de software sênior | Engenharia de software sênior | 8.500,00 | 100% (40 h/sem) | 4,0 | 34.000,00 |
+| Engenheiro de software sênior | 8.500,00 | 100% (40 h/sem) | 4,0 | 34.000,00 |
 | Desenvolvedor full stack | 6.000,00 | 87,5% (35 h/sem) | 3,5 | 21.000,00 |
-| Engenheiro de automação | Engenharia de automação | 7.000,00 | 100% (40 h/sem) | 4,0 | 28.000,00 |
+| Engenheiro de automação | 7.000,00 | 100% (40 h/sem) | 4,0 | 28.000,00 |
 | Cientista de dados (ML) | 7.000,00 | 75% (30 h/sem) | 3,0 | 21.000,00 |
-| Bolsista de iniciação tecnológica (3º bolsista, 20 h/sem) | A selecionar | 750,00 | Meses 11–16 | 6,0 bolsa-meses | 4.500,00 |
+| Bolsista de iniciação tecnológica (3º bolsista, 20 h/sem) | 750,00 | Meses 11–16 | 6,0 bolsa-meses | 4.500,00 |
 | Coordenador (docente) | — | 10 h/sem, sem remuneração | — | 0,00 |
-| **Total** | | | | **17,5 MP CLT + 6 bolsa-meses** | **128.000,00** |
+| **Total** | | | **17,5 MP CLT + 6 bolsa-meses** | **128.000,00** |
 
 **Por que dedicação ajustada:** nos meses 13–16 a META-3 já estará encerrada (mês 11). O pico fica na integração (engenheiro sênior) e no piloto com Modbus (engenheiro de automação), ambos a 100%. PO, full stack e cientista de dados ficam em dedicação parcial, o que evita pagar capacidade ociosa. A redução de jornada será formalizada por termo junto à Fundepes, conforme suas normas.
 
