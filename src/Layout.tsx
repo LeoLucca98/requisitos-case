@@ -16,7 +16,7 @@ export default function Layout() {
           <Link to="/#cenarios">Cenários</Link>
           <Link to="/#prova">A prova</Link>
           <Link to="/#documentos">Documentos</Link>
-          <Link to="/#proposta">Proposta</Link>
+          <Link to="/#proposta">Como funciona</Link>
         </nav>
       </header>
       <Outlet />

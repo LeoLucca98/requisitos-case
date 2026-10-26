@@ -103,7 +103,7 @@ export default function Home() {
       </section>
 
       <section id="proposta" className="wrap block">
-        <h2><span className="num">05</span>O que propomos ao laboratório</h2>
+        <h2><span className="num">05</span>Como funciona</h2>
         <div className="cols3">
           <div className="card step"><span>Fase 1</span><h3>Pré-proposta</h3><p>PO participa da escrita do PTA: objetivos, metas verificáveis e, principalmente, uma seção de fora de escopo.</p></div>
           <div className="card step"><span>Fase 2</span><h3>Linha de base</h3><p>Requisitos com critérios de aceite aprovados em ata e matriz de rastreabilidade meta → requisito → entrega.</p></div>
