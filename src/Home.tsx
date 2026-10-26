@@ -48,11 +48,49 @@ export default function Home() {
 
       <section id="caso" className="wrap block">
         <h2><span className="num">01</span>O caso</h2>
-        <div className="cols3">
-          <div className="card"><h3>As partes</h3><p><b>LASIN</b> executa a pesquisa. <b>MetalPrime</b>, fabricante de gateways industriais habilitada na Lei de Informática, financia. A <b>Fundepes</b> faz a gestão do convênio.</p></div>
-          <div className="card"><h3>O projeto</h3><p>SENTINELA: OEE e manutenção preditiva de células robotizadas de solda, embarcados no gateway MP-Edge. 12 meses, R$ 600 mil, 8 pessoas.</p></div>
-          <div className="card"><h3>A virada</h3><p>A montadora Veltra Motors passa a exigir rastreabilidade de cada peça soldada, enviada ao seu MES em até 5 minutos, para auditoria IATF 16949.</p></div>
+        <p className="intro">Antes da mudança, é preciso entender quem são as empresas, que problema elas tinham na fábrica e o que o projeto se comprometeu a entregar.</p>
+
+        <h3 className="sub">Quem está envolvido</h3>
+        <div className="actors">
+          <div className="card actor"><span className="tag">Financiadora</span><h3>MetalPrime Automação Industrial</h3><p>Fabricante mineira de gateways IoT industriais (linha MP-Edge) e controladores para células robotizadas de solda. Como fabricante de bens de informática habilitada na Lei de Informática, precisa investir parte do faturamento em P&amp;D e faz isso por convênio com o laboratório.</p><p className="need"><b>Necessidade:</b> deixar de vender o MP-Edge como simples concentrador de dados e oferecer inteligência embarcada (indicadores e previsão de falhas), diferenciando o produto no mercado automotivo.</p></div>
+          <div className="card actor"><span className="tag">Planta piloto</span><h3>Autopeças Ferraz</h3><p>Fornecedora automotiva de primeiro nível em Betim/MG, cliente da MetalPrime. Opera a célula robotizada de solda CEL-04, onde a plataforma seria validada em produção real.</p><p className="need"><b>Necessidade:</b> parar de perder produção com quebras inesperadas de tocha, alimentador de arame e servos, e ter indicadores confiáveis do desempenho da célula.</p></div>
+          <div className="card actor"><span className="tag">Cliente final</span><h3>Veltra Motors</h3><p>Montadora que compra as peças soldadas pela Ferraz. No início, não participa do projeto: aparece apenas como cliente da cadeia, e é ela quem depois dispara a mudança.</p><p className="need"><b>Necessidade (que surge no mês 5):</b> rastrear cada peça soldada por número de série, para auditorias de qualidade.</p></div>
+          <div className="card actor"><span className="tag">Executor</span><h3>LASIN</h3><p>Laboratório universitário de sistemas inteligentes, com experiência em aprendizado de máquina e sistemas embarcados. Conduz a pesquisa e o desenvolvimento.</p></div>
+          <div className="card actor"><span className="tag">Gestão do convênio</span><h3>Fundepes</h3><p>Fundação de apoio que administra os recursos: contrata a equipe, executa as compras, acompanha o plano de trabalho e analisa pedidos de aditivo.</p></div>
         </div>
+
+        <h3 className="sub">O problema na fábrica</h3>
+        <p className="intro">Diagnóstico da célula CEL-04 feito na concepção do projeto (set/2025 a jan/2026):</p>
+        <div className="stats light">
+          <div><b>61%</b><span>de OEE, contra 75–85% considerados bons no setor</span></div>
+          <div><b>14,5 h/mês</b><span>de paradas não planejadas (~29 eventos)</span></div>
+          <div><b>~R$ 4.200</b><span>de prejuízo por hora de célula parada</span></div>
+          <div><b>2 a 5 dias</b><span>de atraso para ver o OEE, apurado à mão em planilha</span></div>
+        </div>
+        <p className="note">Causas das paradas: tocha de solda (41%), alimentador de arame (27%), servomotores (18%) e outras (14%). Quase todas dão sinais antes de falhar, mas ninguém estava olhando para esses sinais.</p>
+
+        <h3 className="sub">O que o projeto SENTINELA propôs</h3>
+        <div className="proposal">
+          <div className="card"><p>Uma plataforma embarcada no próprio gateway MP-Edge que lê os dados dos robôs e CLPs da célula, calcula o OEE em tempo quase real e usa modelos de aprendizado de máquina para avisar, com horas de antecedência, que um componente vai falhar.</p>
+          <ul className="goals">
+            <li><b>Coletar</b> dados de processo e estado dos equipamentos via OPC UA, direto na borda</li>
+            <li><b>Calcular</b> o OEE por célula e turno, atualizado em até 1 minuto</li>
+            <li><b>Prever</b> falhas: detectar ao menos 70% delas com 4 h ou mais de antecedência</li>
+            <li><b>Validar</b> na CEL-04 e transferir a tecnologia para a MetalPrime incorporar ao produto</li>
+          </ul></div>
+          <ol className="metas">
+            <li><time>Meses 1–3</time><b>META-1</b> Arquitetura e coleta de dados no gateway</li>
+            <li><time>Meses 3–7</time><b>META-2</b> Plataforma de OEE com dashboards</li>
+            <li><time>Meses 6–11</time><b>META-3</b> Modelos de manutenção preditiva</li>
+            <li><time>Meses 10–12</time><b>META-4</b> Piloto na fábrica e transferência</li>
+          </ol>
+        </div>
+        <div className="facts">
+          <span><b>12 meses</b> · mar/2026 a fev/2027</span>
+          <span><b>R$ 600 mil</b></span>
+          <span><b>8 pessoas</b> · PO, engenharia de software, automação, ciência de dados e bolsistas</span>
+        </div>
+        <p className="note">O que ficou expressamente de fora: rastreabilidade por peça, integração com sistemas de terceiros (MES/ERP), protocolos diferentes de OPC UA e leitura de códigos nas peças. É exatamente isso que a Veltra viria a pedir.</p>
       </section>
 
       <section id="cenarios" className="block band">
