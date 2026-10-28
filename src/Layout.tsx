@@ -2,28 +2,19 @@ import { Link, Outlet, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 
 export default function Layout() {
-  const { pathname, hash } = useLocation()
-  useEffect(() => {
-    if (hash) document.querySelector(hash)?.scrollIntoView({ behavior: 'smooth' })
-    else window.scrollTo(0, 0)
-  }, [pathname, hash])
+  const { pathname } = useLocation()
+  useEffect(() => { if (!location.hash) window.scrollTo(0, 0) }, [pathname])
   return (
     <>
       <header className="topbar">
-        <Link to="/" className="brand"><span className="brand-mark" />SENTINELA</Link>
+        <Link to="/" className="brand">Requisitos e produto em P&amp;D</Link>
         <nav>
-          <Link to="/#caso">O caso</Link>
-          <Link to="/#cenarios">Cenários</Link>
-          <Link to="/#prova">A prova</Link>
-          <Link to="/#documentos">Documentos</Link>
-          <Link to="/#proposta">Como funciona</Link>
+          <Link to="/">Método</Link>
+          <Link to="/documentos/01_visao_stakeholders">Documentos</Link>
         </nav>
       </header>
       <Outlet />
-      <footer className="footer">
-        <span>Projeto SENTINELA · Convênio Fundepes nº 042/2026 · LASIN</span>
-        <span>Estudo de caso de gestão de produto em P&amp;D</span>
-      </footer>
+      <footer className="footer">Projeto de exemplo: SENTINELA</footer>
     </>
   )
 }
