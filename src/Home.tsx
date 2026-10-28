@@ -65,7 +65,7 @@ export default function Home() {
       <aside className="toc">
         <p className="toc-title">Visão geral</p>
         <ul>
-          <li><a href="#pd">Projetos de P&amp;D</a></li>
+          <li><a href="#pd">O que muda em P&amp;D</a></li>
           <li><a href="#etapas">As etapas</a></li>
         </ul>
         <p className="toc-title">Etapas</p>
@@ -80,24 +80,24 @@ export default function Home() {
       <main className="content">
         <header className="intro">
           <h1>Requisitos em projetos de P&amp;D</h1>
-          <p className="proposta">Um jeito de trabalhar requisitos pensado para P&amp;D, que organiza o que o projeto já produz.</p>
+          <p className="proposta">Este é o jeito como organizo requisitos em projetos de P&amp;D. A ideia não é criar etapas novas, e sim aproveitar melhor o que o projeto já produz.</p>
           <p>
-            Cada etapa se apoia em algo que o projeto já tem: o plano de trabalho, a wiki ou ferramenta do time, os cards,
-            os marcos e as reuniões de acompanhamento. Para o parceiro, o ritmo de reuniões e entregas continua o mesmo,
-            só que com informação mais clara. E, como cada etapa deixa pronta uma parte do que será entregue no fim, a
-            transferência de tecnologia vira a consolidação de algo que já existe.
+            Quase tudo acontece em lugares que já existem: o plano de trabalho, a wiki do time, os cards, os marcos e as
+            reuniões de acompanhamento. O parceiro continua com as mesmas reuniões e as mesmas entregas; o que muda é que a
+            informação fica mais organizada. E, no fim do projeto, a transferência de tecnologia dá bem menos trabalho,
+            porque boa parte do material foi sendo montada pelo caminho.
           </p>
         </header>
 
         <section id="pd">
-          <h2>Características de projetos de P&amp;D</h2>
-          <p>O método foi pensado a partir de algumas características próprias desse tipo de projeto:</p>
+          <h2>O que muda num projeto de P&amp;D</h2>
+          <p>Projetos de P&amp;D têm algumas particularidades, e o método foi montado pensando nelas.</p>
           <ul>
-            <li><b>Descobertas no meio do caminho.</b> Parte do que precisa ser feito só fica clara depois que a pesquisa avança.</li>
-            <li><b>Metas que precisam ser comprovadas.</b> O plano de trabalho tem metas e marcos que a fundação e o parceiro acompanham, muitas vezes com relatórios anuais.</li>
-            <li><b>Um parceiro especialista e usuário ao mesmo tempo.</b> Quem financia também conhece o domínio e vai usar ou manter o resultado.</li>
-            <li><b>Revisões que chegam aos poucos.</b> Ajustes e pedidos aparecem ao longo do projeto, nas reuniões de acompanhamento.</li>
-            <li><b>Times pequenos.</b> Cada pessoa acumula vários papéis, então o que fica registrado precisa ser simples de manter.</li>
+            <li>Nem tudo está claro no começo. Muita coisa só se define depois que a pesquisa anda.</li>
+            <li>As metas precisam ser comprovadas. A fundação e o parceiro acompanham os marcos, e geralmente há relatório anual.</li>
+            <li>O parceiro costuma ser, ao mesmo tempo, especialista no assunto e quem vai usar ou manter o que for entregue.</li>
+            <li>Os pedidos de ajuste chegam aos poucos, quase sempre nas reuniões de acompanhamento.</li>
+            <li>O time é pequeno e as pessoas acumulam funções. Por isso, o que se registra tem que ser fácil de manter.</li>
           </ul>
         </section>
 
