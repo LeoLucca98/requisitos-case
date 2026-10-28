@@ -109,4 +109,12 @@ article { min-width: 0; max-width: 780px; }
   .ficha div:last-child { border-bottom: 0 !important; }
   h1 { font-size: 26px; }
 }
-td:first-child { white-space: nowrap; }
+.proposta { font-size: 20px; line-height: 1.5; margin: 0 0 16px; }
+.rodape { display: grid; grid-template-columns: 1fr 1fr; margin: 24px 0 0; border: 1px solid var(--line); font: 14px/1.5 var(--ui); }
+.rodape div { padding: 10px 14px; }
+.rodape div + div { border-left: 1px solid var(--line); }
+.rodape dt { color: var(--muted); font-size: 12px; }
+.rodape dd { margin: 2px 0 0; }
+.req { margin: 8px 0 16px; }
+@media (max-width: 860px) { .rodape { grid-template-columns: 1fr; } .rodape div + div { border-left: 0; border-top: 1px solid var(--line); } }
+.md td:first-child { white-space: nowrap; }

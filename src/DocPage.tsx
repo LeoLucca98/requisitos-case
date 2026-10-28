@@ -12,7 +12,7 @@ export default function DocPage() {
   return (
     <main className="docpage">
       <aside className="docnav">
-        <Link to="/#documentos" className="back">← Todos os documentos</Link>
+        <Link to="/#demonstracao" className="back">← Voltar ao método</Link>
         <ol>
           {docs.map(d => (
             <li key={d.slug} className={d.slug === slug ? 'on' : ''}>
@@ -22,7 +22,7 @@ export default function DocPage() {
         </ol>
       </aside>
       <article>
-        <div className="doc-kicker">{doc.phase} · documento {doc.num}</div>
+        <div className="doc-kicker">Demonstração em cenário fictício · documento {doc.num}</div>
         <p className="doc-role">{doc.role}</p>
         <div className="md">
           <Markdown remarkPlugins={[remarkGfm]} components={{ table: p => <div className="tablewrap"><table {...p} /></div> }}>

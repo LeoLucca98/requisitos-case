@@ -1,4 +1,4 @@
-# 09 — Comparativo: Projeto SENTINELA sem PO × com PO
+# 09 — Efeito do método no cenário: SENTINELA sem e com a pessoa de requisitos
 
 > O **Cenário com PO** corresponde ao que os documentos 01 a 08 registram. O **Cenário sem PO** descreve como o mesmo projeto tende a evoluir sem gestão de produto; valores sem registro documental aparecem marcados como *(est.)*.
 > Data deste documento: 20/10/2026 (mês 8).
